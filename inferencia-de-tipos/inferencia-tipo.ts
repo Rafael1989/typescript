@@ -1,0 +1,15 @@
+//A BOA PRÁTICA É SEMPRE DEFINIR O TIPO,MESMO ELE JÁ SABENDO.
+//QUANDO NÃO DEFINE O TIPO ELE DEDUZ PELO PRIMEIRO VALOR ATRIBUÍDO NO CASO NUMBER, DEPOIS AO TENTAR ATRIBUIR STRING NA VARIÁVEL QUANTIDADE NÃO COMPILA
+let quantidade = 20;
+
+// quantidade = 'qualquer'; - não compila!
+//NO CASO A SEGUIR O ARRAY SERÁ DE NUMBER, POIS NULL É FILHO DE NUMBER, DEPOIS AO TENTAR ATRIBUIR BOOLEAN DÁ ERRO POIS É NUMBER
+let x = [1, 2, null];
+// x[0] = true; -> Não compila!
+// Contextual Typing
+// ABAIXO ELE JÁ SABE QUE ONMOUSEDOWN ESPERA UM MOUSEEVENT, DESSA FORMA ELE JÁ DÁ O AUTOCOMPLETE DA VARIÁVEL EVENTO ELE FAZ TUDO ISSO ATRAVÉS DO CONTEXTUAL TYPING
+window.onmousedown = function(evento) {
+    console.log(evento.button); // OK
+    // console.log(evento.buton); Não compila!
+    
+}
