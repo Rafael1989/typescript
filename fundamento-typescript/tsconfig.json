@@ -1,0 +1,6 @@
+//vai compilar na versão 5 do javascript
+{
+    "compilerOptions": {
+        "target": "es5"
+    }
+}
