@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promises</title>
+    </head>
+    <body>
+        <script>
+            //chamada assíncrona
+            const resposta = fetch('http://api.postmon.com.br/v1/cep/01310932');
+
+            //quando terminar a execução ele chamará o then
+            resposta
+                .then(data => data.json())
+                .then(data => console.log(data))
+                .catch(erro => console.log(erro));
+        </script>
+    </body>
+</html>
