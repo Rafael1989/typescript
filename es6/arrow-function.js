@@ -6,6 +6,7 @@ const precos = ['10','23','19'];
 //});
 
 //faz a mesma coisa que o código acima comentado
+//o código abaixo é a arrow function
 const precosEmReais = precos.map(preco => 'R$ ' + preco + ',00');
 
 //imprime ['R$ 10,00','R$ 23,00','R$ 19,00']
